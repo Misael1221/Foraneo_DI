@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Acerca </title>
+    <title> Fóraneos INC </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -72,9 +72,6 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Tareas <b class="caret"></b></a>
                   <ul class="dropdown-menu">
                       <li>
-                          <a href="tarea1.html"> Solución servicio </a>
-                      </li>
-                      <li>
                           <a href="cotizacion.html"> Cotizacion </a>
                       </li>
 
@@ -95,13 +92,13 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header"> Acerca de
+                <h1 class="page-header"> Tarea
 
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html"> Inicio </a>
                     </li>
-                    <li class="active"> Acerca de </li>
+                    <li class="active"> Un servicio </li>
                 </ol>
             </div>
         </div>
@@ -110,59 +107,31 @@
         <!-- Intro Content -->
         <div class="row">
             <div class="col-md-6">
-                <img class="img-responsive" src="http://apreu.anahuacmayab.mx/archivos/imagenes/caf.png" alt="">
+                <img class="img-responsive" src="http://www.muwom.com/wp-content/uploads/2016/12/lo-mas-escuchado-en-spoify-en-espana-es.png" alt="">
             </div>
             <div class="col-md-6">
-                <h2>Acerca de nosotros </h2>
-                <p> Somos un par de estudiantes que estamos realizando un proyecto para la materia de Diseño Interactivo, en la cual tenemos que realizar una propuesta a la solución de un problema. </p>
-  <p> El problema que nostros selecccionamos fue de como ayudar a los foráneos a tener una mejor economía, tambien ayudarles en temas como la vivienda, las compras, alimentación, lugares de interés, como administrar el dinero y otros datos interesantes.<p>
+                <h2> Spotify</h2>
+                <div>
+
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"> Propósito </a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"> Objetivo </a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"> Tarea </a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home"> El propósito de Spotify es brindar un servicio de streaming para facilitar a la gente escuchar su musica favorita.  </div>
+                    <div role="tabpanel" class="tab-pane" id="profile"> Hacer que las personas se suscriban a su servicio de música para que puedan descargar la música y libre de anuncios. <br>
+                        Recomendar artistas del mismo genero del que escuchan para que sigan utilizando su servicio, además de traer antes los ultimos sencillos de sus artistas favoritos.
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages"> Ser un servicio de uso fácil y rapido en la busqueda de musica, de tener todas las canciones que el cliente quiera, brindar la información sobre lo ultimo de música, crear playlists adecuadas para el usuario, crear eventos especiales, atraer gente que se suscriba mediante sus ofertas</div>
+                  </div>
+
+                </div>
             </div>
         </div>
-        <!-- /.row -->
-
-        <!-- Team Members -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header"> Miembros del equipo </h2>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3> Angel Cedeño Castro <br>
-                            <small> Estudiante de ISC </small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3> Misael Bandala <br>
-                            <small> Estudiante ISC </small>
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                        <ul class="list-inline">
-                            <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
         <hr>
 
@@ -179,7 +148,15 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.js">
+    $('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+$('#myTabs a:first').tab('show') // Select first tab
+$('#myTabs a:last').tab('show') // Select last tab
+    </script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
