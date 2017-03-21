@@ -35,14 +35,14 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div id="app-2" class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"> Foraneos INC </a>
+                <a v-bind:title="message" class="navbar-brand" href="index.html"> Foraneos INC </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -278,7 +278,15 @@
         interval: 5000 //changes the speed
     })
     </script>
-
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    message: 'La fecha es ' + new Date()
+  }
+})
+    </script>
 </body>
 
 </html>
