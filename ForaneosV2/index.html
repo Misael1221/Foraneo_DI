@@ -78,7 +78,7 @@
                         </li>
                         <li>
                             <a href="cotizacion.html"> Cotizacion </a>
-                        </li
+                        </li>
                         <li>
                             <a href="examen2.html"> Examen 2do parcial </a>
                         </li>
@@ -147,34 +147,34 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Certificado ISO 9001 </h4>
+                        <h4><i class="fa fa-fw fa-check"></i> Entrevistas</h4>
                     </div>
                     <div class="panel-body">
-                        <p> Entrevistas</p>
-                        <img width="320px" height="200px" href="Entrevistas.html" src="http://www.sopitas.com/wp-content/uploads/2014/08/Tec-de-Monterrey-Logo.jpg" class="btn btn-default"> </img>
+                        <p> Entrevistas realizadas durante etapas primeras del proyecto</p>
+                        <img width="320px" height="300px" href="Entrevistas.html" src="http://www.sopitas.com/wp-content/uploads/2014/08/Tec-de-Monterrey-Logo.jpg" class="btn btn-default"> </img>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-folder-open"></i> Informacion util para foraneos</h4>
+                        <h4><i class="glyphicon glyphicon-folder-open"></i> Informacion útil para foraneos</h4>
                     </div>
                     <div class="panel-body">
                       <p> Informacion veraz contada por foraneos para foraneos. </p>
-                        <img width="320px" height="200px" src="https://soyconta.files.wordpress.com/2013/03/paletas.jpg" width="480px"> </img>
+                        <img width="320px" height="250px"  src="https://soyconta.files.wordpress.com/2013/03/paletas.jpg" width="480px"> </img>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Facil acceso </h4>
+                        <h4><i class="fa fa-fw fa-compass"></i> Fácil acceso </h4>
                     </div>
                     <div class="panel-body">
                     </div>
                     <p> Solo pica en nuestro menu y accede a la informacion que quieres. </p>
-                    <img width="340px" height="200px" src="http://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/12/menu1.jpg"></img>
+                    <img width="348px" height="240px" src="https://cdn.discordapp.com/attachments/280146479979429888/297379324892413953/unknown.png"></img>
                 </div>
             </div>
         </div>
@@ -210,9 +210,18 @@
 var app2 = new Vue({
   el: '#app-2',
   data: {
-    message: 'La fecha es ' + new Date()
+    message: 'La fecha es ' + new Date(),
+  }
+
+  ready: function () {
+    var self=this;
+    setInterval(function () {
+      console.log('updating time')
+    }, 10);
   }
 })
+
+
     </script>
 </body>
 
