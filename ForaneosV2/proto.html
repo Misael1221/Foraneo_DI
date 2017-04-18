@@ -108,6 +108,27 @@
         </div>
         <div class="protoio-embed-prototype" data-code="MX12HN" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
         <script async src="https://static.proto.io/api/widget-embed.js"></script>
+
+        <div id="app-5">
+          <p>{{ message }}</p>
+          <button v-on:click="elbutton"> Invertir palabra </button>
+        </div>
+<br>
+<br>
+        <div id='app-3'>
+
+<span>{{datenow}}</span>
+</div>
+<br>
+<br>
+<ul id="maincra">
+  <li v-for="alumno in alumnos">
+    {{ Alumno }}
+  </li>
+</ul>
+
+
+
         <hr>
 
         <!-- Footer -->
@@ -127,6 +148,50 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+
+    var app5 = new Vue({
+      el: '#app-5',
+      data: {
+        message: 'El mensaje'
+      },
+      methods: {
+        elbutton: function () {
+          this.message = this.message.split('').reverse().join('')
+        }
+      }
+    })
+
+    var app3 = new Vue2({
+      el: '#app-3',
+      data: {
+        datenow: 'A'
+      },
+      methods: {
+        time() {
+          var self = this
+          this.datenow = moment().format()
+
+          setInterval(self.time, 1000)
+        },
+      },
+      mounted: function() {
+        this.time()
+      }
+    });
+
+new Vue({
+  el:"#maincra",
+  data:{
+    alumnos:[
+      {nombre: "A", apellido: "B"},
+    ]
+  }
+});
+
+    </script>
+
 
 </body>
 
